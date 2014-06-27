@@ -57,5 +57,137 @@
 		<img src="/assets/img/maps/flowdren.png" class="img-thumbnail">
 		<h1>FLOWDREN CREATED BY (people pls)</h1>
 			<h2>adrian pls add stufs here with your html magic</h2>
+			<hr>
+     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ymlmodal">
+      YML 
+      </button>
+    </div>
 	</div>
         <hr>
+    
+	
+	
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ymlmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      <pre  class="prettyprint lang-yml prettyprinted"> info:
+  title: Flowdren
+  world: Flowdren
+  version: 1.2
+  type: dtm
+  creators:
+  - Slicorn
+  - Cobalt838
+  contributor:
+  - steven5703
+  - ParaSpider
+  - cole1crc
+  - MLGtino
+  - Evocal
+  - AdrianG503
+  spawn: 201.5,108,66.5,-89,0
+
+remove-drops:
+- glass
+- log
+ 
+repair-drops:
+- leather helmet
+- leather chestplate
+- iron leggings
+- leather boots
+- stone sword
+- diamond pickaxe
+ 
+loadout:
+  helmet:
+    item: leather_helmet
+  chestplate:
+    item: leather_chestplate
+  leggings:
+    item: iron_leggings
+  boots:
+    item: leather_boots
+  0:
+    item: iron_sword
+  1:
+    item: bow
+  2:
+    item: diamond_pickaxe
+    enchants:
+  3:
+    title: '&eGolden Apple'
+    item: golden_apple
+    amount: 2
+  4:
+    item: glass
+    amount: 64
+  5:
+    item: log
+    amount: 64
+  6:
+    item: cooked_fish
+    amount: 16
+  7:
+    item: arrow
+    amount: 64
+
+teams:
+  blue:
+    spawn: 185.5,6,-83.5,-0,0
+    title: Agira
+    monuments:
+      a:
+        name: Left
+        location: 115,26,152
+      b:
+        name: Right
+        location: 287,26,151
+  red:
+    spawn: 214.5,6,218.5,79,0
+    title: Certal
+    monuments:
+      a:
+        name: Left
+        location: 284,26,-18
+      b:
+        name: Right
+        location: 112,26,-17
+
+regions:
+  red-spawn:
+    type: cylinder
+    center: 214,6,218
+    radius: 34
+    height: 15
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the spawn area.'
+      damage:
+        who: 'blue'
+  blue-spawn:
+    type: cylinder
+    center: 185,6,-83
+    radius: 34
+    height: 15
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the spawn area.'
+      damage:
+        who: 'red' </pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
