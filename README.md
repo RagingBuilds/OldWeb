@@ -1,6 +1,6 @@
 You can access our public map repo <a href="https://github.com/RagingBuilds/RMaps">here</a>
 ####Todo list
-* ~~~Add livemap~~~
+* ~~Add livemap~~
  * Style livemap
 * Add server information
 * Finish homepage
