@@ -1,7 +1,4 @@
-ragingbuilds.github.io
-====================
-We are Rage INC! We create verious maps for Minecraft servers!
----
+We are Rage INC! We build maps! We also can't figure out some slogan
 You can access our public map repo <a href="https://github.com/RagingBuilds/RMaps">here</a>
 
 ===
