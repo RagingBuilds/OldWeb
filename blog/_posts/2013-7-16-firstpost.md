@@ -1,6 +1,5 @@
 ---
 layout: default
-image: /assets/img/imgfpage.png
 tittle: First Post (Test)
 ---
 
