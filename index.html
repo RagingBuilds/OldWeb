@@ -6,7 +6,9 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
-	        <link rel="shortcut icon" href="/assets/favicon.ico">
+	       <link href="/assets/css/slider.css" rel="stylesheet">
+		   <!--Slider CSS -->
+		   <link rel="shortcut icon" href="/assets/favicon.ico">
 		<!-- Custom Google Web Font -->
                 <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
                 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -52,82 +54,42 @@
                 	</div>
             	</div>
         	</div>
-    	
-    	<hr>	
-    	</div>
-    	<div class="container">
-		<div class="jumbotron" style="background-image:url(/assets/img/imgfpage.png)">
-			<h1><i class="fa fa-flag"></i>&nbsp; Raging Incorporated Build Team!</h1>
-                        <p>Welcome to the Raging Incorporated Build Team website.</p>
-		  </div>
-	</div>
-        </div>
-        <hr>
-            <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">FEATURE</h2>
-                    <p class="lead">plz finish</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+    	 <hr>
+		 <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+		
+		       <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://i.imgur.com/rQiglPz.png);"></div>
+                <div class="carousel-caption">
+                    <h1><i class="fa fa-flag"></i>&nbsp; Raging Incorporated Build Team!</h1>
                 </div>
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a --->
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">FEATURE</2>
-                    <p class="lead">INFORMATION</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
                 </div>
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">FEATURE</h2>
-                    <p class="lead">INFORMATION</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
 
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
     </div>
-    <!-- /.content-section-a -->
-    <hr>
+
 <footer>
         <div class="container">
             <div class="row">
@@ -149,6 +111,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
     
 </body>
 </html>
