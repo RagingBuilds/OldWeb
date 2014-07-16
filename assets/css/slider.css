@@ -2,12 +2,12 @@ html, body {
 	height:100%;
 }
 
-.carousel,
-.item,
-.active {
-	height:100%;
+.carousel {
+	height:50%;
 }
 
+.item,
+.active,
 .carousel-inner {
 	height:100%;
 }
