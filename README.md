@@ -4,8 +4,8 @@ You can access our public map repo <a href="https://github.com/RagingBuilds/RMap
  * Style livemap
 * Add server information
 * Finish homepage
-* Add blog page
- * We're going to be using jekyll
+* ~~Add blog page~~
+* Get the blog page up and running with the themes and our first post.
 * Finish todo list...?
 
 ##When Working with this Repo!
@@ -14,5 +14,5 @@ You can access our public map repo <a href="https://github.com/RagingBuilds/RMap
 Make sure that you do NOT make changes to the following folders/files:
 ```/blog/
 /user/
-/server
+/server/
 And anything containing Ruby content.
