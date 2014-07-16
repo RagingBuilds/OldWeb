@@ -1,4 +1,4 @@
-HTML5 Muffin chocchip steps
+Running Jekyll on your PC!
 ============================
 
 Run bundle install
