@@ -12,7 +12,8 @@ You can access our public map repo <a href="https://github.com/RagingBuilds/RMap
 #####Well I am guessing that you want to contribute to the website :), well before you get started make sure to follow the following rules.
 ---
 Make sure that you do NOT make changes to the following folders/files:
-```/blog/
+```
+/blog/
 /user/
 /server/
 And anything containing Ruby content.
