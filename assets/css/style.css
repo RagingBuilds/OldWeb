@@ -71,7 +71,7 @@ html {
 }
 
 .header {
-	background-color: #101010;
+	background-color: #341D57;
 	height: 100px;
 	width: 100%;
 }
@@ -97,7 +97,7 @@ html {
 }
 
 .header-nav li a:hover {
-	background-color: #171717;
+	background-color: #1F1034;
 }
 
 .cg-breadcrumbs {
