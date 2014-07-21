@@ -13,7 +13,6 @@ You can access our public map repo <a href="https://github.com/RagingBuilds/RMap
 ---
 Make sure that you do NOT make changes to the following folders/files: (Hue)
 ```
-/blog/
 /user/
 /server/
 And anything containing Ruby content.
