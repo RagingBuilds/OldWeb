@@ -17,4 +17,3 @@ Make sure that you do NOT make changes to the following folders/files: (Hue)
 ```
 /user/
 /server/
-And anything containing Ruby content.
