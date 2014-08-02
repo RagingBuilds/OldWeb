@@ -1,166 +1,229 @@
-body, html {
-	height: 100%;
-	width: 100%;
+            /* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+  color: #fff;
+  background: url(../../images/bg_dirt.jpg) repeat;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
+#bg {
+    margin-top: -28px;
+    padding-top: 30px;
+    height: 100%;
+    background: url(../../images/bg_dirthd.png) repeat-x;
 }
+.btn-success {
+    background: #1CB841;
+    }
 
-.lead {
-	font-size: 18px;
-	font-weight: 400;
+.list-group {
+    color: #5a5a5a;
 }
-
-.intro-header {
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 50px;
-	color: #f8f8f8;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
-	background-size: cover;
-	text-align: center;
+.panel {
+    color: #5a5a5a;
 }
-
-.intro-message {
-	position: relative;
-	padding-top: 20%;
-	padding-bottom: 20%;
+.panel-colored {
+    background: #34495E;
 }
-
-.intro-message > h1 {
-	margin: 0;
-	font-size: 5em;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+.input-group {
+    margin: 6px;
 }
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
 
-.intro-divider {
-	width: 400px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
-
-.intro-message > h3 {
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+.inverse2 {
+    background: url(../../images/transpBlack75.png) repeat;
+    padding: 20px;
+    border-radius: 14px;
 }
-
-@media (max-width: 767px) {
-	.intro-message {
-		padding-bottom: 15%;
-	}
-
-	.intro-message > h1 {
-		font-size: 3em;
-	}
-
-	ul.intro-social-buttons > li {
-		display: block;
-		margin-bottom: 20px;
-		padding: 0;
-	}
-
-	ul.intro-social-buttons > li:last-child {
-		margin-bottom: 0;
-	}
-
-	.intro-divider {
-		width: 100%;
-	}
+.inverse3 {
+    background: url(../../images/transpBlack75.png) repeat;
+    padding: 6px;
+    border-radius: 14px;
 }
-
-.network-name {
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: 2px;
+.s
+.space {
+    margin-top:145px;
 }
-
-.content-section-a {
-	background-color: #f8f8f8;
-	padding: 50px 0;
-}
-
-.content-section-b {
-	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;
-	padding: 50px 0;
-}
-
-.section-heading {
-	margin-bottom: 30px;
-}
-
-.section-heading-spacer {
-	border-top: 3px solid #e7e7e7;
-	width: 200px;
-	float: left;
-}
-
-.banner {
-	padding: 100px 0;
-	color: #f8f8f8;
-	background: url(../img/banner-bg.jpg) no-repeat center center;
-	background-size: cover;
-}
-
-.banner h2 {
-	margin: 0;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-	font-size: 3em;
-}
-
-.banner ul {
-	margin-bottom: 0;
-}
-
-.banner-social-buttons {
-	float: right;
-	margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-	ul.banner-social-buttons {
-		float: left;
-		margin-top: 15px;
-	}	
-}
-
-@media (max-width: 767px) {
-	.banner h2 {
-		margin: 0;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-		font-size: 3em;
-	}
-
-	ul.banner-social-buttons > li {
-		display: block;
-		margin-bottom: 20px;
-		padding: 0;
-	}
-
-	ul.banner-social-buttons > li:last-child {
-		margin-bottom: 0;
-	}	
-}
-
 footer {
-	background-color: #f8f8f8;
-	padding: 50px 0;
+    background: none;
+    padding: 2px;       
+    margin-top: 38px;
+    color: #FFF;
+}
+footer a {
+    color: #FFF;
+}
+.modal {
+     color: #5a5a5a;
+}
+textarea {
+    color:#000;
+    width: 100%;
+}
+.alert {
+    margin: 20px;
+    padding: 10px;
+    }
+.logo {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 22px;
+    }
+.navbar-collapse {
+    max-height: none;
+}
+td, tbody {
+    border: none !important;
+}
+tr:hover, th:hover {
+    color: #34495E !important;
 }
 
-p.copyright {
-	margin: 15px 0 0;
+.btn-file-input {
+    text-align: right;
+    outline: none;
+    cursor: inherit;
+    display: block;
+    background: #34495E;
+    color:#FFF !important;
+    border:2px solid #34495E !important;
+    border-radius: 0px;
+}
+    
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 28px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.carousel h1 {
+    text-shadow: 2px 2px #000;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
 }
 
-.scrollbar{
-width:150px;
-height:300px;
-background-color:lightgray;
-margin-top:40px;
-margin-left:40px;
-overflow-y:scroll;
-float:left;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 800px;
+  background-color:#555;
 }
-.content{
-height:450px;
-} 
+
+
+.carousel-inner2 {
+
+}
+.carousel-inner2 .item {
+    width: 100%;
+    height: 200px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel2 .item {
+  height: 200px;
+  background-color:#555;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+
+
+/* NavBar Account Menu bootsnip
+-------------------------------------------------- */
+.navbar-login
+{
+    width: 320px;
+    padding: 6px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+.input-group-addon,
+.input-group-btn {
+  width: none !important;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remve the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+    
+    .navbar-right {
+        margin-right:8px;
+        }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
