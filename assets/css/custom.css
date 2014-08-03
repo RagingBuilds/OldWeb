@@ -60,58 +60,8 @@
   background-color:#555;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
-.btn-labeled {padding-top: 0;padding-bottom: 0;}
 
 
-/* NavBar Account Menu bootsnip
--------------------------------------------------- */
-.navbar-login
-{
-    width: 320px;
-    padding: 6px;
-    padding-bottom: 0px;
-}
-
-.navbar-login-session
-{
-    padding: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-.icon-size
-{
-    font-size: 87px;
-}
-.input-group-addon,
-.input-group-btn {
-  width: none !important;
-  white-space: nowrap;
-  vertical-align: middle;
-}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
