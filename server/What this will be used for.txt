@@ -1,1 +1,0 @@
-Used for server rules, info, ect to avoid confusion on other pages
