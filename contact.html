@@ -1,15 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Contact - Raging INC</title>
-
-    <!-- Bootstrap core CSS -->
+	<meta charset="UTF-8">
+	<title>Contact - Raging INC</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/typed.custom.js" type="text/javascript"></script>
+      <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Google Web Font -->
@@ -18,12 +14,41 @@
 
     <!-- Add custom CSS here -->
     <link href="css/custom.css" rel="stylesheet">
+	<script>
+	$(function(){
 
+		$("#typed").typed({
+			strings: ["I guess you want to contact us?", "Well yur in", "Well you're in the right place!.", "Email: raging.build.inc@gmail.com \nSkype - \nPodcrash5: swivalchairpotrol\nJake41901: jake41901\nAdrianG503: retro_spectrum\nOr Just Use the Contact Form Below ↓↓↓"],
+			typeSpeed: 30,
+		});
+
+	});
+  function shift(){
+      $(".head-wrap").addClass("shift-text");
+      terminalHeight();
+  }
+
+  function terminalHeight(){
+      var termHeight = $(".terminal-height");
+      var value = termHeight.text();
+      value = parseInt(value);
+      setTimeout(function(){
+          if (value > 10){
+              value = value-1;
+              this.txtValue = value.toString();
+              termHeight.text(this.txtValue);
+              self.terminalHeight();
+          }
+          else{
+              clearTimeout();
+          }
+      }, 10);
+  }
+	</script>
+	<link href="css/main.css" rel="stylesheet" />
 </head>
-
 <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -54,30 +79,83 @@
         </div>
         <!-- /.container -->
     </nav>
-    	
-    	</div>
-        <hr>
-<footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li><a href="/members">Members</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="/apply">Join Us!</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; R.I INC Build Team 2014. All Rights Reserved</p>
+    <hr>
+
+<div class="header">
+	<div class="head-wrap">
+		<h1 class="h1">Contact.txt</h1>
+		<div class="text-editor-wrap">
+			<div class="title-bar"><span class="title">contact.txt &mdash; 80x<span class="terminal-height">25</span></span></div>
+			<div class="text-body">
+				 <span id="typed" style="white-space:pre"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+      <div class="container">
+        <div class="panel panel-default" style="margin:0 auto;width:500px">
+          <div class="panel-heading">
+            <h2 class="panel-title">Raging Build Contact Form</h2>
+          </div>
+          <div class="panel-body">
+            <form name="contactform" method="post" action="/mailer.php" class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name">
                 </div>
-            </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject Message">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Message</label>
+                <div class="col-lg-10">
+                  <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..."></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                  <button type="submit" class="btn btn-default">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
-    </footer>
-  
-  <!-- All js scripts below this -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11539016-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
