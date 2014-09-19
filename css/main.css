@@ -29,7 +29,7 @@ p {
   padding: 10px 0;
   background: url(../img/imgfpage.png) top center no-repeat fixed;
   background-size: 100%; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1500px) {
     .header {
       background-size: auto; } }
   .header .h1 {
