@@ -1,4 +1,2 @@
-RagingBuilds.github.io
-======================
-
-Website; http://ragingbuilds.github.io
+You can access our public map repo <a href="https://github.com/RagingBuilds/RMaps">here</a>
+####Website is done.

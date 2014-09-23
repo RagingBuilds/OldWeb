@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="">
 	
-	<title>&raquo; Home - RagingINC</title>
+	<title>&raquo; Contact - RagingINC</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -36,64 +36,70 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="/maps.html">Maps</a></li>	
 					<li><a href="/team.html">Team</a></li>	
-					<li><a href="/contact.php">Contact</a></li>
+					<li class="active"><a href="/contact.php">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div> 
 	<!-- /.navbar -->
 
-	<!-- Header -->
-	<header id="head">
-		<div class="container">
-			<div class="row">
-				<h1 class="lead">RAGING BUILDS INC</h1>
-				<p class="tagline">MINECRAFT BUILD TEAM</p>
-				<p><a href="/team.html" class="btn btn-action btn-lg" role="button">Our Team!</a> <a href="/contact.html"class="btn btn-action btn-lg" role="button">Hire Us!</a></p>
-			</div>
-		</div>
-	</header>
-	<!-- /Header -->
+	<header id="head" class="secondary"></header>
 
-		
-	<!-- Highlights - jumbotron -->
-	<div class="jumbotron top-space">
-		<div class="container">
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Contact</li>
+		</ol>
+
+		<div class="row">
 			
-			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>About Us:</h4></div>
-					<div class="h-body text-center">
-						<p>Rage Incorporated is a hard working Minecraft Build Team that will give you persistent perfection in your building needs.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Our Team!</h4></div>
-					<div class="h-body text-center">
-						<p>We outshine other build teams because of our outstanding top of the line builders, and our friendly staff members.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Our Work Ethics!</h4></div>
-					<div class="h-body text-center">
-						<p>We build maps for anyone, anytime. Whether that be for a minigame, lobby, or just a personal build you'd like to keep. We're here to make your dreams a reality.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Our Goal!</h4></div>
-					<div class="h-body text-center">
-						<p>Our goal as a team is to become well known across the Minecraft Globe. So no matter who needs a quality build, they know who to turn to! </p>
-					</div>
-				</div>
-			</div> <!-- /row  -->
-		
-		</div>
-	</div>
-	<!-- /Highlights -->
+			<!-- Article main content -->
+			<article class="col-sm-9 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Contact us</h1>
+				</header>
+				
+				<p>
+					We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and we will get back to you as soon as we can. Please allow a couple days for us to respond.
+				</p>
+				<br>
+					<form method="post" action="form.php">
+						<div class="row">
+							<div class="col-sm-4">
+								<input name="name" class="form-control" type="text" placeholder="Name">
+							</div>
+							<div class="col-sm-4">
+								<input name="email" class="form-control" type="email" placeholder="Email">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea name="message" placeholder="Type your message here..." class="form-control" rows="9"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-6">
+								<input class="btn btn-action" id="submit" name="submit" type="submit" value="Send Message!">
+							</div>
+						</div>
+					</form>
 
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+	<section class="container-full top-space">
+		<div id="map"></div>
+	</section>
 
 	<footer id="footer" class="top-space">
 
@@ -172,5 +178,11 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	
+	<!-- Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+	<script src="assets/js/google-map.js"></script>
+	
+
 </body>
 </html>
